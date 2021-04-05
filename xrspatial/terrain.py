@@ -54,18 +54,18 @@ def generate_terrain(x_range: tuple = (0, 500),
 
     Examples:
     ----------
-    Imports
+    >>> # Imports
     >>> import datashader as ds
     >>> from datashader.transfer_functions import shade
     >>> from xrspatial import generate_terrain
 
-    Create Canvas
+    >>> # Create Canvas
     >>> cvs = ds.Canvas(plot_width=800,
     >>>                 plot_height=600,
     >>>                 x_range=(-20e6, 20e6),
     >>>                 y_range=(-20e6, 20e6))
 
-    Generate Terrain Data Array
+    >>> # Generate Terrain Data Array
     >>> terrain = generate_terrain(canvas = cvs)
     >>> print(terrain)
     <xarray.DataArray 'terrain' (y: 600, x: 800)>
